@@ -34,6 +34,9 @@ messageTextarea.addEventListener('input', saveFeedbackState);
 
 feedbackForm.addEventListener('submit', event => {
 	event.preventDefault();
+	
+	console.log({ email: emailInput.value, message: messageTextarea.value });
+
 	const feedbackState = {
 		email: '',
 		message: '',
